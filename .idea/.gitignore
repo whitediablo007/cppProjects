@@ -1,3 +1,11 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Datasource local storage ignored files
+/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
 Ignore other user-defined file #
 
 # Clion ================================
@@ -10,7 +18,6 @@ Ignore other user-defined file #
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
-
 
 # Generated files
 .idea/**/contentModel.xml
