@@ -30,6 +30,8 @@ void changeLines(float array1[], float array2[][size]);
 
 void upperTriangle(float array1[], float array2[][size]);
 
+void printMatrix(float array1[][size], float array2[][size]);
+
 int main() {
 
     cout << setprecision(3);
@@ -343,16 +345,7 @@ int main() {
             }
 
             //выводим обе матрицы
-            for (int i = 0; i < size; i++) {
-                for (int j = 0; j < size; j++) cout << arrCopy[i][j] << " ";
-
-                cout << " | ";
-
-                for (int j = 0; j < size; j++) cout << arrOnes[i][j] << " ";
-
-                cout << endl;
-            }
-            cout << endl;
+            printMatrix(arrCopy, arrOnes);
 
             //обратная матрица
             for (int i = 0; i < size; i++) {
@@ -453,6 +446,21 @@ void printMatrix(float array1[], float array2[][size]) {
     }
     cout << endl;
 }
+/**
+ * Выводит в консоль матрицы
+ * @param array1 двумарная матрица
+ * @param array2 дыумерная матрица
+ */
+void printMatrix(float array1[][size], float array2[][size]) {
+    for (int i = 0; i < size; i++) {
+        for (int j = 0; j < size; j++) cout << array1[i][j] << " ";
+        cout << " | ";
+        for (int j = 0; j < size; j++) cout << array2[i][j] << " ";
+        cout << endl;
+    }
+    cout << endl;
+}
+
 
 /**
  * Выбор главного элемента по строкам
